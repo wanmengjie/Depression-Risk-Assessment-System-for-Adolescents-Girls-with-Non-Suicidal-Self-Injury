@@ -23,7 +23,7 @@ with st.sidebar:
     st.header("Clinical Assessment Parameters")
 
     # Individual
-    age = st.slider("Age", 10, 18, 15)
+    age = st.slider("Age", 12, 18, 15)
     ipaq_level = st.selectbox("IPAQ level", options=[1, 2, 3],
                               format_func=lambda x: ["Low", "Moderate", "High"][x - 1])
     bmi = st.slider("BMI", 13.0, 51.0, 21.0, step=0.1)
